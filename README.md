@@ -20,8 +20,8 @@
 
 | Feature | Url | 학습 여부 | 학습 일자 | 
 | :------- | :------- | :-------: | :-------: |
-| Blob | https://developer.mozilla.org/ko/docs/Web/API/Blob | [ ] | |
-| File System Access API | https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API | [ ] | | 
+| Blob | https://developer.mozilla.org/ko/docs/Web/API/Blob | <ul><li>- [ ] </li></ul> | |
+| File System Access API | https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API | <ul><li>- [ ] </li></ul> | | 
 
 
 ## How to
