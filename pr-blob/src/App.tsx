@@ -32,7 +32,7 @@ function App() {
       const file :File = files[0]
 
       
-      return URL.createObjectURL(file.slice(0, 1024 * 1024, 'video/mp4'))
+      return URL.createObjectURL(file)
     } else {
       return ""
     }
