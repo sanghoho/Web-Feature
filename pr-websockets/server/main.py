@@ -1,6 +1,8 @@
 from fastapi import FastAPI, WebSocket
 from fastapi.responses import HTMLResponse
 
+import uvicorn
+
 app = FastAPI()
 
 html = """
@@ -19,7 +21,7 @@ html = """
         </ul>
         <script>
             var ws = new WebSocket("ws://localhost:8000/ws");
-            ws.onmessage = function(event) {
+            ws.onmessage = function(    ) {
                 var messages = document.getElementById('messages')
                 var message = document.createElement('li')
                 var content = document.createTextNode(event.data)
@@ -45,7 +47,17 @@ async def get():
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
+
+    print('CONNECTING...')
     await websocket.accept()
     while True:
-        data = await websocket.receive_text()
-        await websocket.send_text(f"Message text was: {data}")
+        try:
+            data = await websocket.receive_text()
+            await websocket.send_text(f"Message text was: {data}")
+        except Exception as e:
+            print(e)
+            break
+    print("CONNECTION DEAD...")
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=8000)
