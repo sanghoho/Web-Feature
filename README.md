@@ -20,12 +20,14 @@
 
 | Feature | Url | 학습 여부 | 학습 일자 | 
 | :------- | :------- | :-------: | :-------: |
-| Blob | https://developer.mozilla.org/ko/docs/Web/API/Blob | <ul><li>- [x] </li></ul> | |
-| File System Access API | https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API | <ul><li>- [ ] </li></ul> | | 
-| Web Audio API | https://developer.mozilla.org/ko/docs/Web/API/Web_Audio_API | <ul><li>- [ ] </li></ul> | |
-| WebRTC API | https://developer.mozilla.org/ko/docs/Web/API/WebRTC_API | <ul><li>- [ ] </li></ul> | |
-| Streams API | https://developer.mozilla.org/ko/docs/Web/API/Streams_API | <ul><li>- [ ] </li></ul> | |
-| WebCodecs API | https://developer.mozilla.org/en-US/docs/Web/API/WebCodecs_API | <ul><li>- [ ] </li></ul> | |
+| [Blob](https://developer.mozilla.org/ko/docs/Web/API/Blob) | https://github.com/sanghoho/Web-Feature/tree/main/pr-blob | <ul><li>- [x] </li></ul> | 2022.01.25 |
+| [WebSockets API](https://developer.mozilla.org/ko/docs/Web/API/WebSockets_API) | https://github.com/sanghoho/Web-Feature/tree/main/pr-websockets | <ul><li>- [x] </li></ul> | 2022.10.02 |
+| [WebCodecs API](https://developer.mozilla.org/en-US/docs/Web/API/WebCodecs_API) |  | <ul><li>- [ ] </li></ul> | |
+| [File System Access API](https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API) |  | <ul><li>- [ ] </li></ul> | | 
+| [Web Audio API](https://developer.mozilla.org/ko/docs/Web/API/Web_Audio_API) |  | <ul><li>- [ ] </li></ul> | |
+| [WebRTC API](https://developer.mozilla.org/ko/docs/Web/API/WebRTC_API) |  | <ul><li>- [ ] </li></ul> | |
+| [Streams API](https://developer.mozilla.org/ko/docs/Web/API/Streams_API) |  | <ul><li>- [ ] </li></ul> | |
+
 
 ## How to
 
