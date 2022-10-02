@@ -25,16 +25,19 @@ const Chat = () => {
 
     useEffect(() => {
         if (!ws.current) {
-            ws.current = new WebSocket(webSocketUrl);
+            const clientID: number = new Date().getTime()
+            const clientWebSocketUrl: string = `${webSocketUrl}/${clientID}`
+
+            ws.current = new WebSocket(clientWebSocketUrl);
             ws.current.onopen = () => {
-              console.log("connected to " + webSocketUrl);
+              console.log("connected to " + clientWebSocketUrl);
               setSocketConnected(true);
             }
             ws.current.onclose = (error) => {
-                console.log("disconnect from " + webSocketUrl, error);
+                console.log("disconnect from " + clientWebSocketUrl, error);
             };
             ws.current.onerror = (error) => {
-                console.log("connection error " + webSocketUrl, error);
+                console.log("connection error " + clientWebSocketUrl, error);
             };
             ws.current.onmessage = (event) => {
                 console.log("connection data", event.data);
